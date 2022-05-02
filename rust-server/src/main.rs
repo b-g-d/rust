@@ -2,10 +2,11 @@
 use actix_web::{web, App, HttpResponse, HttpServer};
 use serde::Deserialize;
 
-mod mandelbrot;
+// mod mandelbrot;
 
 fn main() {
     println!("Hello, world!");
+    println!("This is an excellent decision");
     let server = HttpServer::new(|| {
         App::new()
         .route("/", web::get().to(get_index))
